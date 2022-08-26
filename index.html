@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula cuadrática</title>
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" />
+     <!--Agregando la extensión para poder utilizar chart.js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+  </head>
+  <body>
+    <div class="principal">
+      <h1>Calculadora de la fórmula cuadrática</h1>
+      <form class="miForm" action="">
+        <label class="l1" for="numero1">
+          <span>Ingrese a: </span>
+          <input type="number" name="numero1" id="n1" />
+        </label>
+        <label class="l2" for="numero2">
+          <span>Ingrese b: </span>
+          <input type="number" name="numero2" id="n2" />
+        </label>
+        <label class="l3" for="numero3">
+          <span>Ingrese c: </span>
+          <input type="number" name="numero3" id="n3" />
+        </label>
+      </form>
+      <button id="btn">Enviar</button>
+    </div>
+    <div class="resultado">
+        <p id="result"></p>
+    </div>
+    <br>
+    <br>
+    <div class="grafico">
+      <h2>El gráfico sería el siguiente</h2>
+      <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    
+    <footer class="foot">
+        <p>Hecho por George Mayén 0901-19-11383</p>
+    </footer>
+    <script src="funcioncuadratica.js"></script>
+  </body>
+ 
+</html>
